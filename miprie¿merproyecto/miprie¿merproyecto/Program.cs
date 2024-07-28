@@ -10,24 +10,17 @@ namespace miprie_merproyecto
     {
         static void Main(string[] args)
         {
-            Boolean comprobar = true;
-            Console.WriteLine("El valor es: {0}", comprobar);
 
-            //prioridad de los operadores aritmeticos.
-            //se pone el sufijo m para la division con decimales.
 
-            decimal respuesta = 5 + 8 - 2 * 5 / 4m + 1; //14.75 valor incorrecto; 11.5 → valor correcto
+            //ejercicio obtener el promedio de una serie de numeros
 
-            Console.WriteLine("La respuesta es: {0} ", respuesta) ;
+            int[] serie = new int[] { 5, 4, 6, 8, 9 }; //32
+            int suma = 0;
+            foreach (int num in serie) { suma += num; }
 
-            Console.WriteLine("Nombre: ");
-            string nombre = Console.ReadLine();
-
-            Console.WriteLine("Hola {0} bienvenido ", nombre);
-
-            DateTime fechaActual = new DateTime();
-            fechaActual = DateTime.Now;
-            Console.WriteLine(" La fecha actual es : {0} ", fechaActual);
+            decimal prom = suma / serie.Length;
+            Console.WriteLine("La suma es: {0}, el primedio {1}", suma, prom );
+            
 
             //pausa.
             Console.ReadLine();
