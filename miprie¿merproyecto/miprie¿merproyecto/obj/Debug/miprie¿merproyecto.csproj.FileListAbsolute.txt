@@ -1,0 +1,7 @@
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\bin\Debug\miprie¿merproyecto.exe.config
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\bin\Debug\miprie¿merproyecto.exe
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\bin\Debug\miprie¿merproyecto.pdb
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\obj\Debug\miprie¿merproyecto.csproj.AssemblyReference.cache
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\obj\Debug\miprie¿merproyecto.csproj.CoreCompileInputs.cache
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\obj\Debug\miprie¿merproyecto.exe
+C:\Users\amaya\desktop\progral-2024-semi\miprie¿merproyecto\miprie¿merproyecto\obj\Debug\miprie¿merproyecto.pdb
