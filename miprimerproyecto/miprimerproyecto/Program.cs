@@ -8,23 +8,31 @@ namespace miprimerproyecto
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(" Num1 : ");
-            int num1 = int.Parse(Console.ReadLine());
-          num1 =  sbyte.Parse(Console.ReadLine());
+        static void Main(string[] args){
+            //Prioridad de los operadores aritmeticos.
+            //ejercicio obtener el promedio de una serie de numeros
+            int[] serie = new int[] { 5, 4, 6, 8, 9 }; //32
+            int suma = 0;
+            foreach (int num in serie){
+                suma += num;
+               
+                //estructuras de control.
+                //1. if. ejercicio. pedir al usuario la edad si es mayor de edad que le diga bienvenido.
+                
+                Console.Write("Edad: ");
+                int edad = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(" Num 2 :");
-            int num2 = int.Parse(Console.ReadLine());
-            num2 = sbyte.Parse(Console.ReadLine());
+                if (edad >= 18){
+                    Console.WriteLine("Bienvenido al mundo de las reposabilidades.");
+                }else{
+                    Console.WriteLine("Eres un adolescente, disfruta de la vida.");
+                }
+                decimal prom = suma / serie.Length;
+                Console.WriteLine("La suma es: {0}, el promedio {1}", suma, prom);
 
-            int respuesta = num1 + num2;
-            Console.WriteLine(" la suma de {0} + {1} = {2} ", num1, num2, respuesta);
-            int suma = num1 + num2;
-
-
-            //pausa.
-            Console.ReadLine();
+               
+                //pausa.
+                Console.ReadLine();
         }
 
     }
