@@ -11,33 +11,23 @@ namespace mi_primer_proyecto
     internal class Program
     {
         static void Main(string[] args){
-            //Obtener la secuencia fibonacci
-            int a = 0, b = 1, c = 1;
-            // /*
-            // a+b=c
-            // 0+1=1
-            // 1+0=1
-            // 1+1=2
-            // 2+1=3
-            // 3+2=5
-            // 5+3=8
-            // 8+5=13
+            //determinar si cada numero de la serie es primo 
+            
+            int[] serie = new int[] { 5, 9, 4, 6, 3, 2 , 7 , 11 , 15 , 17 , 21};
+            foreach (int num in serie){
+                int i = 1;
+                double n;
+                     n = 0;
+                while (i <= num && n <= 2) {
+                    if (num % i == 0) {
+                        n++; //n=n+1
+                    }
+                    i++; //i=i+1
 
-            // *
-            // */
-
-
-            while (c < 100)
-            {
-                Console.WriteLine("{0}+{1}={2}", a, b, c);
-                b = a;
-                a = c;
-                c = a + b;
+                }
+                Console.WriteLine("El numero {0} {1}", num, n <= 2 ? "es primo" : " no es primo");
             }
-
-            Console.ReadLine();
-
- 
+            Console.ReadLine(); 
         }
     }
 }
