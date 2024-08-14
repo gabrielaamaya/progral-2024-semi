@@ -1,0 +1,7 @@
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\bin\Debug\mi primer proyecto.exe.config
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\bin\Debug\mi primer proyecto.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\bin\Debug\mi primer proyecto.pdb
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\obj\Debug\mi primer proyecto.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\obj\Debug\mi primer proyecto.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\obj\Debug\mi primer proyecto.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\mi primer proyecto\mi primer proyecto\obj\Debug\mi primer proyecto.pdb
