@@ -16,49 +16,47 @@ namespace mi_primer_proyecto
 
             //Uso de funciones...
             //ejercicio encontrar la media aritmetica y la desviacion tipica de una seria de numeros.
-
-            int[] serie = new int[] { 1, 2, 3, 4, 5 };
-            Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}", media(serie), tipica(serie));
             Console.Write("Ingrese la serie de numeros separados por comas: ");
             String serie = Console.ReadLine();
             String[] numeros = serie.Split(',');
 
             Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}", media(numeros), tipica(numeros));
+            Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}, la media armonica es: {2}",
+                media(numeros), tipica(numeros), armonica(numeros));
 
-            Console.ReadLIne();
+            Console.ReadLine();
         }
-        static double media(int[] serie)
+        static double media(string[] serie)
         {
-            static double media(string[] serie)
+            double media = 0;
+            foreach (string num in serie)
             {
-                double media = 0;
-                foreach (int num in serie)
-                {
-                    media += num;
-                    foreach (string num in serie)
-                    {
-                        media += int.Parse(num);
-                    }
-                    return media / serie.Length;
-                }
-                static double tipica(int[] serie)
-                {
-                    static double tipica(string[] serie)
-                    {
-                        double tipica = 0,
-                                m = media(serie);
-                        foreach (int num in serie)
-                        {
-                            tipica += Math.Pow(num - m, 2);
-                            foreach (string num in serie)
-                            {
-                                tipica += Math.Pow(int.Parse(num) - m, 2);
-                            }
-                            tipica = Math.Sqrt(tipica / serie.Length);
-                            return Math.Round(tipica, 2);
+                media += int.Parse(num);
+            }
+            return media / serie.Length;
+        }
+        static double tipica(string[] serie)
+        {
+            double tipica = 0,
+                    m = media(serie);
+            foreach (string num in serie)
+            {
+                tipica += Math.Pow(int.Parse(num) - m, 2);
+            }
+            tipica = Math.Sqrt(tipica / serie.Length);
+            return Math.Round(tipica, 2);
+        }
+        static double armonica(string[] serie)
+        {
+            double armonica = 0;
+            foreach (string num in serie)
+            {
+                armonica += (1.0 / double.Parse(num));
+            }
+            armonica = serie.Length / armonica;
+            return Math.Round(armonica, 2);
 
-
-                        }
+        }
            
     }
 }
