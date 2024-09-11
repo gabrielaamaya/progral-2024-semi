@@ -8,6 +8,7 @@ namespace mi_primer_proyecto
 {
     internal class Conversores
     {
+
         double[][] valores = new double[][] {
             new double[] {},//vacio solo para comenzar en 1
             new double[] {0,1,7.73,24.76,36.80, 517.04,8.75,0.9},//monedas
