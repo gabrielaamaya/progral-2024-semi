@@ -20,6 +20,7 @@ namespace miprimerproyecto
             String continuar = "s";
             while (continuar == "s")
             {
+
                 Console.WriteLine("::.. MENU ..::");
                 Console.WriteLine("1. Monedas.");
                 Console.WriteLine("2. Longitud.");
