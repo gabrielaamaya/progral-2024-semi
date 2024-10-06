@@ -1,0 +1,15 @@
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\bin\Debug\db_academica.mdf
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\bin\Debug\db_academica_log.ldf
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\bin\Debug\Academica.exe.config
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\bin\Debug\Academica.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\bin\Debug\Academica.pdb
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.Docente.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.Form1.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.Marteria.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.principal.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.Properties.Resources.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\Academica\obj\Debug\Academica.pdb
