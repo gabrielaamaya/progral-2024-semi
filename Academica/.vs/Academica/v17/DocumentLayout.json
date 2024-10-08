@@ -1,36 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\Academica\\",
+  "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\BLOQUEII\\academica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAFB8897-616B-472B-B7C1-92000908301C}|Academica.csproj|c:\\users\\mineducyt\\desktop\\progral-2024-semi\\academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EAFB8897-616B-472B-B7C1-92000908301C}|Academica.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E7121BF8-AF70-4A80-BBA5-06018D1A42D9}|academica\\academica.csproj|c:\\users\\mineducyt\\desktop\\progral-2024-semi\\bloqueii\\academica\\academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7121BF8-AF70-4A80-BBA5-06018D1A42D9}|academica\\academica.csproj|solutionrelative:academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\Academica\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\Academica\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\BLOQUEII\\academica\\academica\\Form1.cs",
+              "RelativeDocumentMoniker": "academica\\Form1.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\progral-2024-semi\\BLOQUEII\\academica\\academica\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "academica\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:49:50.763Z",
+              "WhenOpened": "2024-10-08T18:25:00.499Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }
