@@ -1,0 +1,15 @@
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\bin\Debug\db_academica.mdf
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\bin\Debug\db_academica_log.ldf
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\bin\Debug\Academica_tarea.exe.config
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\bin\Debug\Academica_tarea.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\bin\Debug\Academica_tarea.pdb
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.Docente.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.Form1.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.Materia.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.principal.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.Properties.Resources.resources
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.exe
+C:\Users\MINEDUCYT\Desktop\progral-2024-semi\BLOQUEII\Academica_tarea\obj\Debug\Academica_tarea.pdb
