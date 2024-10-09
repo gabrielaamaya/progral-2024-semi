@@ -409,6 +409,7 @@
             this.btnNuevoDocente.TabIndex = 4;
             this.btnNuevoDocente.Text = "Nuevo";
             this.btnNuevoDocente.UseVisualStyleBackColor = true;
+            this.btnNuevoDocente.Click += new System.EventHandler(this.btnNuevoDocente_Click);
             // 
             // Docente
             // 

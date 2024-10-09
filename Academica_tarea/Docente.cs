@@ -120,6 +120,7 @@ namespace Academica_tarea
                 }
                 else
                 {
+
                     posicion = 0;
                     actualizarDs();            // Refrescar los datos
                     mostrarDatosMaterias();
@@ -139,5 +140,9 @@ namespace Academica_tarea
             grdDatosMaterias.DataSource = dv;     // Actualizar el DataGridView con los resultados filtrados
         }
 
+        private void btnNuevoDocente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
