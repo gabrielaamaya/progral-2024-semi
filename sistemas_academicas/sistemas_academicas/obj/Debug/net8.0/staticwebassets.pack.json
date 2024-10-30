@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\Alumno.html",
+      "PackagePath": "staticwebassets\\view\\Alumno.html"
+    },
+    {
+      "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\index.html",
+      "PackagePath": "staticwebassets\\view\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.sistemas_academicas.props",
+      "PackagePath": "build\\sistemas_academicas.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.sistemas_academicas.props",
+      "PackagePath": "buildMultiTargeting\\sistemas_academicas.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.sistemas_academicas.props",
+      "PackagePath": "buildTransitive\\sistemas_academicas.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.sistemas_academicas.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
