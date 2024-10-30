@@ -1,0 +1,8 @@
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.csproj.AssemblyReference.cache
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.AssemblyInfoInputs.cache
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.AssemblyInfo.cs
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.csproj.CoreCompileInputs.cache
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabya\OneDrive\Escritorio\progral-2024-semi\sistema_academico\sistema_academico\obj\Release\net8.0\sistema_academico.sourcelink.json

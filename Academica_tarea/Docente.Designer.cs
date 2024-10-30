@@ -423,7 +423,8 @@
             this.Controls.Add(this.txtBuscarAlumnos);
             this.Controls.Add(this.grdDatosDocentes);
             this.Name = "Docente";
-            this.Text = "Docente";
+            this.Text = "docente";
+            this.Load += new System.EventHandler(this.Docente_Load);
             this.grbDatosAlumno.ResumeLayout(false);
             this.grbDatosAlumno.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosDocentes)).EndInit();

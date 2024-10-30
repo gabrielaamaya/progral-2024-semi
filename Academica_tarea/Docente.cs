@@ -144,5 +144,10 @@ namespace Academica_tarea
         {
 
         }
+
+        private void Docente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
