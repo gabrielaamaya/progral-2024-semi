@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\Alumno.html",
       "PackagePath": "staticwebassets\\view\\Alumno.html"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1NKb0dtZYXHmaeXQkblF2gBT+vdBrH0BZ11+YQxWGkI=",
+  "Hash": "E8bkDiP10KsdsQIJuFi1p46hYJU6YaMgPLPNzaWTeF4=",
   "Source": "sistemas_academicas",
   "BasePath": "_content/sistemas_academicas",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\img\\logo.png",
+      "SourceId": "sistemas_academicas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\",
+      "BasePath": "_content/sistemas_academicas",
+      "RelativePath": "img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
     {
       "Identity": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\Alumno.html",
       "SourceId": "sistemas_academicas",
