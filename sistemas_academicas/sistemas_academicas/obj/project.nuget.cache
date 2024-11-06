@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g5WYmk1npd8=",
+  "dgSpecHash": "QIs3ZDYOpV4=",
   "success": true,
   "projectFilePath": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\sistemas_academicas.csproj",
   "expectedPackageFiles": [
@@ -133,6 +133,7 @@
     "C:\\Users\\gabya\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.9.0\\swashbuckle.aspnetcore.swaggerui.6.9.0.nupkg.sha512",
     "C:\\Users\\gabya\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\gabya\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\gabya\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\gabya\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
     "C:\\Users\\gabya\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",
     "C:\\Users\\gabya\\.nuget\\packages\\system.composition.convention\\7.0.0\\system.composition.convention.7.0.0.nupkg.sha512",
