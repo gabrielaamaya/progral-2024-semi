@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\view\\Alumno.html"
     },
     {
+      "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\Docente.html",
+      "PackagePath": "staticwebassets\\view\\Docente.html"
+    },
+    {
+      "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\busqueda_alumno.html",
+      "PackagePath": "staticwebassets\\view\\busqueda_alumno.html"
+    },
+    {
       "Id": "C:\\Users\\gabya\\OneDrive\\Escritorio\\progral-2024-semi\\sistemas_academicas\\sistemas_academicas\\wwwroot\\view\\index.html",
       "PackagePath": "staticwebassets\\view\\index.html"
     },

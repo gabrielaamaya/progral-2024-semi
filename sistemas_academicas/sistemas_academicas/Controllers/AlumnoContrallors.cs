@@ -7,15 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using sistema_academico.Models;
 
-namespace sistema_academico.Controllers
+namespace sistema_academicas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AlumnosController : ControllerBase
+    public class DocenteController : ControllerBase
     {
         private readonly MyDbContext _context;
 
-        public AlumnosController(MyDbContext context)
+        public DocenteController(MyDbContext context)
         {
             _context = context;
         }

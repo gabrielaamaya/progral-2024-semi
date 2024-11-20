@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using sistema_academico.Models;
 using sistemas_academicas.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sistema_academico.Models
+namespace sistemas_academicas.Models
 {
     public class MyDbContext : DbContext
     {
@@ -14,6 +15,7 @@ namespace sistema_academico.Models
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) { }
         public DbSet<Alumno> Alumnos { get; set; }
         public DbSet<Docente> Docentes { get; set; }
+        public 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
