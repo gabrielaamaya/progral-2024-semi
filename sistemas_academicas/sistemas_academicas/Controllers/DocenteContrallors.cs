@@ -30,14 +30,14 @@ namespace sistema_academicas.Controllers
         }
         // GET: api/Docentes/buscar
         [HttpGet("{buscar}")]
-        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocentes([FromQuery] DocenteBusquedaParametros parametro) {
+        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocentes(string buscar) { 
             var consulta = _context.Docentes.AsQueryable();
-            if (!string.IsNullOrEmpty(parametro.nombre!=)){
-                consulta = consulta.Where(d => d.nombre.Contains(parametro.nombre));
+            if (!string.IsNullOrEmpty(buscar)){
+                consulta = consulta.Where(d => d.nombre.Contains(buscar));
             }
-            if (!string.IsNullOrEmpty(parametro.codigo) && consulta.Count()<=0   ){
+            if (!string.IsNullOrEmpty(buscar) && consulta.Count()<=0   ){
                 consulta = _context.Docentes.AsQueryable();
-                consulta = consulta.Where(d => d.codigo.Contains(parametro.codigo));
+                consulta = consulta.Where(d => d.codigo.Contains(buscar));
             }
             return await consulta.ToListAsync();
         }
@@ -70,10 +70,22 @@ namespace sistema_academicas.Controllers
                     throw;
                 }
             }
-            return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
-            //return NoContent();
+            //return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
+            return NoContent();
         }
+        // GET: api/Docente/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Docente>> GetDocente(int id)
+        {
+            var Docente = await _context.Docentes.FindAsync(id);
 
+            if (Docente == null)
+            {
+                return NotFound();
+            }
+
+            return Docente;
+        }
         // POST: api/Docentes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
