@@ -34,8 +34,8 @@
         let filas = "";
         matriculas.forEach(matricula => {
             filas += `<tr onClick='modificarMatricula(${JSON.stringify(matricula)})'>
-            <td>${matricula.idAlumno}</td>
-            <td>${matricula.fecha}</td>
+            <td>${matricula.Alumno.nombre}</td>
+            <td>${matricula.fecha.split("T")[0].split("-").reserve().join("/")}</td>
             <td>${matricula.periodo}</td>
             <td><button class="btn btn-danger" onClick='eliminarMatricula(${JSON.stringify(matricula)}, this)'>DEL</button></td>
         </tr>`;
@@ -44,7 +44,7 @@
     }
     async function eliminarMatriculas(matricula) {
         e.preventDefault();
-        alertify.confirm("Eliminar matricula", `Esta seguro de eliminar a ${matricula.nombre}`, async (e) => {
+        alertify.confirm("Eliminar matricula", `Esta seguro de eliminar a ${matricula.alumno.nombre}?`, async (e) => {
             let respuesta = await fetch(`api/Matriculas/${matricula.idAlumno}`, {
                 method: "DELETE",
                 headers: {

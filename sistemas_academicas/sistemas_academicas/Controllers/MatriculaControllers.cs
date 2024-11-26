@@ -16,7 +16,6 @@ namespace sistema_academicas.Controllers
     public class MatriculaController : ControllerBase
     {
         private readonly MyDbContext _context;
-        private bool idalumno;
 
         public MatriculaController(MyDbContext context)
         {
@@ -25,34 +24,39 @@ namespace sistema_academicas.Controllers
 
         // GET: api/Matricula
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Matricula>>> GetMatricula() =>
-            //return await _context.Matricula.ToListAsync();
-           await _context.Matricula.Include(idalumno ==> idalumno).TolisAsync();
+        public async Task<ActionResult<IEnumerable<Matricula>>> GetMatriculas()
+        {
+            return await _context.Matricula
+                .Include(m => m.Alumno)
+                .ToListAsync();
+        }
 
         // GET: api/Matricula/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Alumno>> GetMatricula(int id)
+        public async Task<ActionResult<Matricula>> GetMatricula(int id)
         {
-            var alumno = await _context.Matricula.FindAsync(id);
+            var matricula = await _context.Matricula
+                .Include(m => m.Alumno)
+                .FirstOrDefaultAsync(m => m.idMatricula == id);
 
-            if (alumno == null)
+            if (matricula == null)
             {
                 return NotFound();
             }
 
-            return Matricula;
+            return matricula;
         }
+
         // PUT: api/Matricula/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAlumno(int id, Matricula alumno)
+        public async Task<IActionResult> PutMatricula(int id, Matricula matricula)
         {
-            if (id != alumno.idMatricula)
+            if (id != matricula.idMatricula)
             {
                 return BadRequest();
             }
 
-            _context.Entry(alumno).State = EntityState.Modified;
+            _context.Entry(matricula).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +64,7 @@ namespace sistema_academicas.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AlumnoExists(id))
+                if (!MatriculaExists(id))
                 {
                     return NotFound();
                 }
@@ -69,38 +73,37 @@ namespace sistema_academicas.Controllers
                     throw;
                 }
             }
-            return CreatedAtAction("GetAlumno", new { id = alumno.idMatricula }, alumno);
-            //return NoContent();
+
+            return NoContent();
         }
 
         // POST: api/Matricula
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Matricula>> PostAlumno(Matricula alumno)
+        public async Task<ActionResult<Matricula>> PostMatricula(Matricula matricula)
         {
-            _context.Matricula.Add(alumno);
+            _context.Matricula.Add(matricula);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAlumno", new { id = alumno.idMatricula}, alumno);
+            return CreatedAtAction("GetMatricula", new { id = matricula.idMatricula }, matricula);
         }
 
         // DELETE: api/Matricula/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAlumno(int id)
+        public async Task<IActionResult> DeleteMatricula(int id)
         {
-            var alumno = await _context.Matricula.FindAsync(id);
-            if (alumno == null)
+            var matricula = await _context.Matricula.FindAsync(id);
+            if (matricula == null)
             {
                 return NotFound();
             }
 
-            _context.Matricula.Remove(alumno);
+            _context.Matricula.Remove(matricula);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool AlumnoExists(int id)
+        private bool MatriculaExists(int id)
         {
             return _context.Matricula.Any(e => e.idMatricula == id);
         }

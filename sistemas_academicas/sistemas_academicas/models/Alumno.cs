@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sistemas_academicas.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace sistema_academico.Models
         public string nombre { get; set; }
         public string direccion { get; set; }
         public string telefono { get; set; }
+        //relacionar con la tabla matricula
+        public ICollection<Matricula>? matriculas { get; set; }
+
     }
 }

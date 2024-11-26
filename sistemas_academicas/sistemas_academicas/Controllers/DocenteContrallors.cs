@@ -23,30 +23,36 @@ namespace sistema_academicas.Controllers
         }
 
         // GET: api/Docentes
-        [HttpGet("buscar")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Docente>>> GetDocentes()
         {
             return await _context.Docentes.ToListAsync();
         }
+
         // GET: api/Docentes/buscar
-        [HttpGet("{buscar}")]
-        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocentes(string buscar) { 
+        [HttpGet("buscar")]
+        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocentes([FromQuery] DocenteBusquedaParametros parametros)
+        {
             var consulta = _context.Docentes.AsQueryable();
-            if (!string.IsNullOrEmpty(buscar)){
-                consulta = consulta.Where(d => d.nombre.Contains(buscar));
+
+            if (!string.IsNullOrEmpty(parametros.buscar))
+            {
+                // Busca por nombre
+                consulta = consulta.Where(d => d.nombre.Contains(parametros.buscar));
             }
-            if (!string.IsNullOrEmpty(buscar) && consulta.Count()<=0   ){
-                consulta = _context.Docentes.AsQueryable();
-                consulta = consulta.Where(d => d.codigo.Contains(buscar));
+
+            // Si no encontró resultados por nombre, intenta buscar por código
+            if (!string.IsNullOrEmpty(parametros.buscar) && !consulta.Any())
+            {
+                consulta = _context.Docentes.Where(d => d.codigo.Contains(parametros.buscar));
             }
+
             return await consulta.ToListAsync();
         }
-        
 
         // PUT: api/Docentes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> Putdocentes(int id, Docente docente)
+        public async Task<IActionResult> PutDocente(int id, Docente docente)
         {
             if (id != docente.idDocente)
             {
@@ -70,24 +76,25 @@ namespace sistema_academicas.Controllers
                     throw;
                 }
             }
-            //return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
-            return NoContent();
+
+            return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
         }
-        // GET: api/Docente/5
+
+        // GET: api/Docentes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Docente>> GetDocente(int id)
         {
-            var Docente = await _context.Docentes.FindAsync(id);
+            var docente = await _context.Docentes.FindAsync(id);
 
-            if (Docente == null)
+            if (docente == null)
             {
                 return NotFound();
             }
 
-            return Docente;
+            return docente;
         }
+
         // POST: api/Docentes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Docente>> PostDocente(Docente docente)
         {
@@ -109,8 +116,8 @@ namespace sistema_academicas.Controllers
 
             _context.Docentes.Remove(docente);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
-            //return NoContent();
+
+            return NoContent(); // Regresamos un NoContent en vez de CreatedAtAction para una eliminación
         }
 
         private bool DocenteExists(int id)
